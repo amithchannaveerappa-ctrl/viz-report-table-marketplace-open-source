@@ -225,6 +225,8 @@ const buildReportTable = async function (
       })
       .style('text-align', 'left')
       .style('font-size', config.headerFontSize + 'px')
+      .style('white-space', config.columnGroupTextWrap ? 'normal' : 'nowrap')
+      .style('word-break', config.columnGroupTextWrap ? 'break-word' : 'normal')
       .attr('draggable', true)
       .call(drag)
       .on('mouseover', function (cell) {
@@ -299,6 +301,8 @@ const buildReportTable = async function (
       .attr('colspan', d => d.colspan)
       .style('text-align', d => d.align)
       .style('font-size', config.bodyFontSize + 'px')
+      .style('white-space', config.columnGroupTextWrap ? 'normal' : 'nowrap')
+      .style('word-break', config.columnGroupTextWrap ? 'break-word' : 'normal')
       .attr('class', d => {
         var classes = ['reportTable'];
         if (typeof d.value === 'object') {
