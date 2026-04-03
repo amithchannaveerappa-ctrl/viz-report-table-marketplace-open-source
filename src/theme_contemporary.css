@@ -131,3 +131,16 @@ table.reportTable td {
   font-family: Open Sans, Helvetica, Arial, sans-serif;
   margin: 4px;
 }
+/* Target the specific classes used for text labels */
+.reportTable .rowCell, 
+.reportTable .nonNumeric,
+.reportTable td {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important; /* Forces breaks in long words */
+  overflow: visible !important;
+  text-overflow: clip !important; /* Removes the "..." */
+  min-width: 250px !important;
+  max-width: 400px !important; /* Prevents it from becoming TOO wide */
+  display: table-cell !important;
+}
