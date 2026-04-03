@@ -61,10 +61,15 @@ table.reportTable th {
 }
 
 table.reportTable td {
-  vertical-align: super;
-  padding: 5px;
+  vertical-align: middle; /* Changed from 'super' for better look with wrapped text */
+  padding: 8px 5px;       /* Added a bit more height padding */
   border: 1px solid #cccccc;
   border-collapse: collapse;
+  
+  /* ADD THESE THREE LINES */
+  white-space: normal !important; 
+  word-wrap: break-word;
+  /* min-width: 250px;        /* Adjust this number based on your preference */ */
 }
 
 .headerCell {
