@@ -183,6 +183,13 @@ const tableModelCoreOptions = {
     default: false,
     order: 0,
   },
+  columnGroupTextWrap: {
+    section: 'Dimensions',
+    type: 'boolean',
+    label: 'Wrap Grouped Dimensions',
+    default: false,
+    order: 10,
+  },
   transposeTable: {
     section: 'Table',
     type: 'boolean',
