@@ -10,7 +10,7 @@ const themes = {
   traditional: require('./theme_traditional.css'),
   looker: require('./theme_looker.css'),
   contemporary: require('./theme_contemporary.css'),
-
+  wrap: require('./theme_wrap.css'),
   fixed: require('./layout_fixed.css'),
   auto: require('./layout_auto.css'),
 };
